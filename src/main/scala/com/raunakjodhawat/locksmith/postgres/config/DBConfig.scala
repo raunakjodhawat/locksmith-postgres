@@ -17,11 +17,11 @@ case class PostgresConfig(
   numThreads: Int
 )
 
-case class LocksmithConfig(
+case class DBConfig(
   postgres: PostgresConfig
 ) derives ConfigReader
 
 // to Make Config singleton
 object DBConfig {
-  def apply(): Option[LocksmithConfig] = ConfigSource.default.at("locksmith").load[LocksmithConfig].toOption
+  def apply(): Option[DBConfig] = ConfigSource.default.at("locksmith").load[DBConfig].toOption
 }

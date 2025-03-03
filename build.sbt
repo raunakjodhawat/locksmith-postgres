@@ -14,3 +14,6 @@ libraryDependencies += "com.github.pureconfig" %% "pureconfig-core" % "0.17.8" %
 libraryDependencies += "org.postgresql" % "postgresql" % "42.7.5"
 // IO operations
 libraryDependencies += "org.typelevel" %% "cats-effect" % "3.5.7"
+libraryDependencies += "org.typelevel" %% "cats-effect-kernel" % "3.5.7"
+libraryDependencies += "org.tpolecat" %% "doobie-core" % "1.0.0-RC8"
+libraryDependencies += "org.tpolecat" %% "doobie-postgres" % "1.0.0-RC8"

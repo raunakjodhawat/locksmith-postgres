@@ -1,5 +1,6 @@
 package com.raunakjodhawat.locksmith.postgres.config
 
+import pureconfig.given
 import pureconfig.{ConfigReader, ConfigSource}
 
 case class LockConfig(
